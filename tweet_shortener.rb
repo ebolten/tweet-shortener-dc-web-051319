@@ -10,15 +10,15 @@ def word_substituter(tweet)
   dictionary = dictionary()
   keys = dictionary.keys
   tweet = tweet.split(" ")
-  
-  tweet.each do |word|
-    keys.each do |key|
-      if key == word
+
+  for i in 1..tweet.length - 1
+    for j in 1..keys.length - 1
+      if tweet[i] == keys[j]
         word = dictionary[key]
-        puts word
       end
     end
   end
+  
   tweet.join(" ")
 
   return tweet
