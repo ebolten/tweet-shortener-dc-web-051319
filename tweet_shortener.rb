@@ -6,6 +6,7 @@ def dictionary
   return dictionary
 end
 
+
 def word_substituter(tweet)
   dictionary = dictionary()
   keys = dictionary.keys
@@ -24,16 +25,18 @@ def word_substituter(tweet)
   return newTweet
 end
 
+
 def bulk_tweet_shortener(tweets)
 
   tweets.each do |tweet|
     puts word_substituter(tweet)
   end
-
 end
+
 
 def selective_tweet_shortener(tweet)
 end
+
 
 def shortened_tweet_truncator(tweet)
 end
