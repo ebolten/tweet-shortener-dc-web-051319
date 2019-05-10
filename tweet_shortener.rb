@@ -12,9 +12,9 @@ def word_substituter(tweet)
 
   tweet.split(" ")
   tweet.each do |longWord|
-    dictionary.each do |key, value|
+    keys.each do |key|
       if key == longWord
-        longWord = value
+        longWord = dictionary[key]
       end
     end
   end
