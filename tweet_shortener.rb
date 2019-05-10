@@ -8,6 +8,7 @@ end
 
 def word_substituter(tweet)
   dictionary = dictionary()
+  keys = dictionary.key
 
   tweet.split(" ")
   tweet.each do |longWord|
@@ -21,6 +22,19 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweet)
+  dictionary = dictionary()
+
+  tweet.split(" ")
+  tweet.each do |longWord|
+    dictionary.each do |key, value|
+      if key == longWord
+        longWord = value
+      end
+    end
+  end
+  tweet.join(" ")
+
+
 end
 
 def selective_tweet_shortener(tweet)
