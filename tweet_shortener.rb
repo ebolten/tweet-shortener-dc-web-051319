@@ -16,6 +16,7 @@ def word_substituter(tweet)
         longWord = shortWord
       end
     end
+  end
 
     tweet.join(" ")
 end
