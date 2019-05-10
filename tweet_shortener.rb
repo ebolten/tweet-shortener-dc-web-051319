@@ -14,11 +14,11 @@ def word_substituter(tweet)
   for i in 1..tweet.length - 1
     for j in 1..keys.length - 1
       if tweet[i] == keys[j]
-        word = dictionary[key]
+        word = dictionary[j]
       end
     end
   end
-  
+
   tweet.join(" ")
 
   return tweet
