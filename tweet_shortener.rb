@@ -20,7 +20,7 @@ def word_substituter(tweet)
     end
     newTweet << word
   end
-  newTweet.join(" ")
+  newTweet = newTweet.join(" ")
   return newTweet
 end
 
