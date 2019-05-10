@@ -11,9 +11,9 @@ def word_substituter(tweet)
 
   tweet.split(" ")
   tweet.each do |longWord|
-    dictionary.each do |firstWord, shortWord|
-      if firstWord == longWord
-        longWord = shortWord
+    dictionary.each do |key, value|
+      if key == longWord
+        longWord = value
       end
     end
   end
