@@ -15,7 +15,7 @@ def word_substituter(tweet)
 
   tweet.each do |word|
     keys.each do |key|
-      if key == word || key.capitalize == word
+      if key.downcase == word.downcase
         word = dictionary[key]
       end
     end
